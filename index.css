@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section1 {
+    padding: 50px;
+    width: 100%;
+    background-color: #00143b;
+}
+
+.content {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: no-wrap; */
+    /* color: #f48126; */
+    color: white;
+}
+
+.content div {
+    width: 50%;
+}
+
+.content img {
+    width: 45%;
+}
+
+.content div h1 {
+    font-size: 61px;
+    padding-bottom: 20px;
+}
+
+.content div p {
+    font-size: 18px;
+    text-align: left;
+}
+
+.content1 {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: no-wrap; */
+    /* color: #f48126; */
+    color: black;
+}
+
+.content1 div {
+    width: 50%;
+}
+
+.content1 img {
+    width: 25%;
+}
+
+.content1 div h1 {
+    font-size: 61px;
+    padding-bottom: 20px;
+}
+
+.content1 div p {
+    font-size: 18px;
+    text-align: left;
+}
+
+.content1 div img {
+    display: none;
+}
+
+.section2 {
+    padding: 40px;
+    width: 100%;
+}
+
+@media screen and (max-width: 930px) {
+    .content img {
+        display: none;
+    }
+
+    .content div {
+        width: 100%;
+    }
+
+    .content div h1 {
+        font-size: 40px;
+    }
+
+    .content div p {
+        text-align: none;
+    }
+
+    .content1 div img {
+        display:block;
+        float: right;
+
+    }
+
+    .content1 img {
+        display: none;
+    }
+
+    .content1 div {
+        width: 100%;
+    }
+
+    .content1 div h1 {
+        font-size: 40px;
+        display: inline-block;
+    }
+
+    .content1 div p {
+        text-align: none;
+        padding-top: 25px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .content div h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .content div p {
+        text-align: center;
+    }
+    .content1 div h1 {
+        font-size: 30px;
+    }
+    .content1 div p {
+        text-align:justify;
+        font-size: 11.67px;
+        line-height: 16px;
+    }
+}
